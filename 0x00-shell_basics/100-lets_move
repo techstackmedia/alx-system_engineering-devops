@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir -p /tmp/u; shopt -s nullglob; mv [A-Z]* /tmp/u/
+mkdir -p /tmp/u shopt -s nullglob; mv [A-Z]* /tmp/u/
