@@ -1,5 +1,2 @@
 #!/bin/bash
-{
-    printf './, ../,'
-    ls -A1 | sort -df | tr '\n' ', ' | sed 's/,$/\n/'
-}
+ls -A1 | grep -Ev '^103-commas$' | sort -df | tr '\n' ', ' | sed 's/,$/\n/' | sed 's/,$//'
