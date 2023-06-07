@@ -1,2 +1,5 @@
 #!/bin/bash
-printf './, ../,' && ls -A1 | sort -df | tr '\n' ', ' | sed 's/,$/\n/'
+{
+    printf './, ../,'
+    ls -A1 | sort -df | tr '\n' ', ' | sed 's/,$/\n/'
+}
