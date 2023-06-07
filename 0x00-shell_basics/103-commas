@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -a -1 | sort -df | awk '{ORS=(NR%2==0)?", ":"\n"}1'
